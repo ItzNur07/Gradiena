@@ -1,0 +1,51 @@
+.navbar{
+  margin-top:20px;
+  @include flexbox(flex,center,space-around);
+  .logo{
+    img{
+      width:150px;
+      cursor: pointer;
+    }
+    Link{
+      text-decoration: none;
+    }
+    h1{
+      background: -webkit-linear-gradient(yellow, red);
+     -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      cursor: pointer;
+      &:hover{
+        background: -webkit-linear-gradient(red, yellow);
+     -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+  ul{
+
+    @include flexbox(flex,center,space-between);
+    li{
+      margin-left:50px;
+      font-size:1rem;
+      cursor:pointer;
+      list-style-type:none;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      color:rgb(19, 40, 65);
+      &:hover{
+        background: -webkit-linear-gradient(#eaa, purple);
+     -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      }
+    }
+    .sk{
+      transition:background .5s;
+      @include buttonbox(orange, orange, white);
+    }
+    .psd{
+      transition:background .5s;
+      @include buttonbox(dodgerblue, dodgerblue, white);
+    }
+  }
+}

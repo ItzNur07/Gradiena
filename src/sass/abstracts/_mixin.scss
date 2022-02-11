@@ -1,0 +1,15 @@
+@mixin flexbox($flex, $alignItem, $justifyContent){
+  display: $flex;
+  align-items:$alignItem;
+  justify-content: $justifyContent;
+}
+
+@mixin buttonbox ($br, $bg, $co){
+  border:2px solid $br;
+  padding:9px 35px;
+  border-radius:24px;
+  &:hover{
+    background-color:$bg;
+    color:$co;
+  }
+}
